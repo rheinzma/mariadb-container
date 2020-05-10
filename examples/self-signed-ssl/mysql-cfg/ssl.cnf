@@ -1,4 +1,4 @@
 [mysqld]
-ssl-key=${APP_DATA}/mysql-certs/server-key.pem
-ssl-cert=${APP_DATA}/mysql-certs/server-cert-selfsigned.pem
-
+ssl-key=/ssl/tls.key
+ssl-cert=/ssl/tls.crt
+ssl-ca=/var/run/secrets/kubernetes.io/serviceaccount/service-ca.crt
